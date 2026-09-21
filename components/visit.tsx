@@ -146,6 +146,43 @@ export async function Visit({ settings = {} as Partial<SiteSettingsMap> }: { set
         <p className="text-center text-sm text-primary-foreground/50">
           © {new Date().getFullYear()} {siteNameVal} — {siteCityVal}. {footerTextVal}
         </p>
+
+        {/* Developer Credit */}
+        <div className="mt-4 border-t border-white/5 pt-4 text-center" dir="rtl">
+          <p className="text-xs text-primary-foreground/35">
+            تم إعداد وتطوير الموقع بواسطة{' '}
+            <a
+              href="https://wa.me/201211178381"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-primary-foreground/50 transition-colors duration-200 hover:text-primary-foreground/80"
+            >
+              محمد السماحي
+            </a>
+          </p>
+          <p className="mt-1 text-xs text-primary-foreground/25">
+            تصميم وتطوير مواقع إلكترونية للأنشطة التجارية والبراندات
+          </p>
+          <p className="mt-1.5 flex items-center justify-center gap-4 text-xs">
+            <a
+              href="https://wa.me/201211178381"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/35 transition-colors duration-200 hover:text-primary-foreground/70"
+              title="تواصل عبر واتساب"
+            >
+              📱 01211178381
+            </a>
+            <span className="text-primary-foreground/15">|</span>
+            <a
+              href="tel:+201024235205"
+              className="text-primary-foreground/35 transition-colors duration-200 hover:text-primary-foreground/70"
+              title="اتصل بنا"
+            >
+              📞 01024235205
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   )
